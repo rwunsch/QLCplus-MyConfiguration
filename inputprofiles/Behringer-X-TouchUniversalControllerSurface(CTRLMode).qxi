@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>wunsch</Author>
+ </Creator>
+ <Manufacturer>Behringer</Manufacturer>
+ <Model>X-Touch Universal Controller Surface (CTRL Mode)</Model>
+ <Type>MIDI</Type>
+ <Channel Number="70">
+  <Name>Slider 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="71">
+  <Name>Slider 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="72">
+  <Name>Slider 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="73">
+  <Name>Slider 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="74">
+  <Name>Slider 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="75">
+  <Name>Slider 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="76">
+  <Name>Slider 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="77">
+  <Name>Slider 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="78">
+  <Name>Slider MAIN</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="80">
+  <Name>Turning-Knob 1</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="81">
+  <Name>Turning-Knob 2</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="82">
+  <Name>Turning-Knob 3</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="83">
+  <Name>Turning-Knob 4</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="84">
+  <Name>Turning-Knob 5</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="85">
+  <Name>Turning-Knob 6</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="86">
+  <Name>Turning-Knob 7</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="87">
+  <Name>Turning-Knob 8</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="88">
+  <Name>JogWheel</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="128">
+  <Name>Turning-Knob Click 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="129">
+  <Name>Turning-Knob Click 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="130">
+  <Name>Turning-Knob Click 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="131">
+  <Name>Turning-Knob Click 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="132">
+  <Name>Turning-Knob Click 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="133">
+  <Name>Turning-Knob Click 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="134">
+  <Name>Turning-Knob Click 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="135">
+  <Name>Turning-Knob Click 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="136">
+  <Name>Slider REC-Button 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="137">
+  <Name>Slider REC-Button 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="138">
+  <Name>Slider REC-Button 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="139">
+  <Name>Slider REC-Button 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="140">
+  <Name>Slider REC-Button 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="141">
+  <Name>Slider REC-Button 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="142">
+  <Name>Slider REC-Button 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="143">
+  <Name>Slider REC-Button 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="144">
+  <Name>Slider SOLO-Button 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="145">
+  <Name>Slider SOLO-Button 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="146">
+  <Name>Slider SOLO-Button 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="147">
+  <Name>Slider SOLO-Button 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="148">
+  <Name>Slider SOLO-Button 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="149">
+  <Name>Slider SOLO-Button 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="150">
+  <Name>Slider SOLO-Button 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="151">
+  <Name>Slider SOLO-Button 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="152">
+  <Name>Slider MUTE-Button 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="153">
+  <Name>Slider MUTE-Button 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="154">
+  <Name>Slider MUTE-Button 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="155">
+  <Name>Slider MUTE-Button 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="156">
+  <Name>Slider MUTE-Button 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="157">
+  <Name>Slider MUTE-Button 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="158">
+  <Name>Slider MUTE-Button 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="159">
+  <Name>Slider MUTE-Button 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="160">
+  <Name>Slider SELECT-Button 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="161">
+  <Name>Slider SELECT-Button 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="162">
+  <Name>Slider SELECT-Button 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="163">
+  <Name>Slider SELECT-Button 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="164">
+  <Name>Slider SELECT-Button 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="165">
+  <Name>Slider SELECT-Button 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="166">
+  <Name>Slider SELECT-Button 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="167">
+  <Name>Slider SELECT-Button 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="168">
+  <Name>Track - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="169">
+  <Name>Pan/Surround - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="170">
+  <Name>EQ - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="171">
+  <Name>Send - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="172">
+  <Name>Plug-Ins - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="173">
+  <Name>Inst - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="174">
+  <Name>Display - Name/Value - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="175">
+  <Name>SMPTE / BEATS - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="176">
+  <Name>Global View - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="177">
+  <Name>Midi Tracks - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="178">
+  <Name>Inputs - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="179">
+  <Name>Audio Tracks - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="180">
+  <Name>Audio Inst - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="181">
+  <Name>AUX - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="182">
+  <Name>Buses - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="183">
+  <Name>Outputs - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="184">
+  <Name>User - Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="185">
+  <Name>Slider MAIN FLIP-Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="186">
+  <Name>Function -  Button F1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="187">
+  <Name>Function -  Button F2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="188">
+  <Name>Function -  Button F3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="189">
+  <Name>Function -  Button F4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="190">
+  <Name>Function -  Button F5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="191">
+  <Name>Function -  Button F6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="192">
+  <Name>Function -  Button F7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="193">
+  <Name>Function -  Button F8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="194">
+  <Name>Modfiy - Button SHIFT</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="195">
+  <Name>Modfiy - Button OPTION</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="196">
+  <Name>Automation - Button READ/OFF</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="197">
+  <Name>Automation - Button WRITE</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="198">
+  <Name>Automation - Button TRIM</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="199">
+  <Name>Utility - Button SAVE</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="200">
+  <Name>Utility - Button UNDO</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="201">
+  <Name>Modfiy - Button CONTROL</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="202">
+  <Name>Modfiy - Button ALT</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="203">
+  <Name>Automation - Button TOUCH</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="204">
+  <Name>Automation - Button LATCH</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="205">
+  <Name>Automation - Button GROUP</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="206">
+  <Name>Utility - Button CANCEL</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="207">
+  <Name>Utility - Button ENTER</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="208">
+  <Name>Transport - Button MARKER</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="209">
+  <Name>Transport - Button NUDGE</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="210">
+  <Name>Transport - Button CYCLE</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="211">
+  <Name>Transport - Button DROP</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="212">
+  <Name>Transport - Button REPLACE</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="213">
+  <Name>Transport - Button CLICK</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="214">
+  <Name>Transport - Button SOLO</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="215">
+  <Name>&lt;&lt; Rewind Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="216">
+  <Name>&gt;&gt; Forward Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="217">
+  <Name>Stop Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="218">
+  <Name>Play Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="219">
+  <Name>Record Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="220">
+  <Name>Fader Bank - Button Left</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="221">
+  <Name>Fader Bank - Button Right</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="222">
+  <Name>Channel - Button Left</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="223">
+  <Name>Channel - Button Right</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="224">
+  <Name>Cross - Button Up</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="225">
+  <Name>Cross - Button Down</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="226">
+  <Name>Cross -  Button Left</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="227">
+  <Name>Cross -  Button Right</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="228">
+  <Name>Cross -  Button Middle</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="229">
+  <Name>Scrub Button</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="238">
+  <Name>Slider Touch 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="239">
+  <Name>Slider Touch 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="240">
+  <Name>Slider Touch 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="241">
+  <Name>Slider Touch 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="242">
+  <Name>Slider Touch 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="243">
+  <Name>Slider Touch 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="244">
+  <Name>Slider Touch 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="245">
+  <Name>Slider Touch 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="246">
+  <Name>Slider Touch MAIN</Name>
+  <Type>Button</Type>
+ </Channel>
+</InputProfile>

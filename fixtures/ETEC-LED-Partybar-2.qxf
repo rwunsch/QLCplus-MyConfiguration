@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>wunsch</Author>
+ </Creator>
+ <Manufacturer>ETEC</Manufacturer>
+ <Model>LED Partybar 2</Model>
+ <Type>Dimmer</Type>
+ <Channel Name="Effect 1 - Red" Preset="IntensityRed"/>
+ <Channel Name="Effect 1 - Green" Preset="IntensityGreen"/>
+ <Channel Name="Effect 1 - Blue" Preset="IntensityBlue"/>
+ <Channel Name="Effect 1 - White" Preset="IntensityWhite"/>
+ <Channel Name="Effect 1 - Motor">
+  <Group Byte="0">Speed</Group>
+ </Channel>
+ <Channel Name="Par 1 &amp; 2 - Red" Preset="IntensityRed"/>
+ <Channel Name="Par 1 &amp; 2 - Green" Preset="IntensityGreen"/>
+ <Channel Name="Par 1 &amp; 2 - Blue" Preset="IntensityBlue"/>
+ <Channel Name="Par 1 &amp; 2 - White" Preset="IntensityWhite"/>
+ <Channel Name="Effect 2 - Red" Preset="IntensityRed"/>
+ <Channel Name="Effect 2 - Green" Preset="IntensityGreen"/>
+ <Channel Name="Effect 2 - Blue" Preset="IntensityBlue"/>
+ <Channel Name="Effect 2 - White" Preset="IntensityWhite"/>
+ <Channel Name="Effect 2 - Motor">
+  <Group Byte="0">Speed</Group>
+ </Channel>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Mode Name="15 channel Mode">
+  <Channel Number="0">Effect 1 - Red</Channel>
+  <Channel Number="1">Effect 1 - Green</Channel>
+  <Channel Number="2">Effect 1 - Blue</Channel>
+  <Channel Number="3">Effect 1 - White</Channel>
+  <Channel Number="4">Effect 1 - Motor</Channel>
+  <Channel Number="5">Par 1 &amp; 2 - Red</Channel>
+  <Channel Number="6">Par 1 &amp; 2 - Green</Channel>
+  <Channel Number="7">Par 1 &amp; 2 - Blue</Channel>
+  <Channel Number="8">Par 1 &amp; 2 - White</Channel>
+  <Channel Number="9">Effect 2 - Red</Channel>
+  <Channel Number="10">Effect 2 - Green</Channel>
+  <Channel Number="11">Effect 2 - Blue</Channel>
+  <Channel Number="12">Effect 2 - White</Channel>
+  <Channel Number="13">Effect 2 - Motor</Channel>
+  <Channel Number="14">Strobe</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

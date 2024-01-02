@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>wunsch</Author>
+ </Creator>
+ <Manufacturer>UKing</Manufacturer>
+ <Model>ZQ02024 - Mini Gobo Moving Head</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan Fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">Color WHITE</Capability>
+  <Capability Min="10" Max="19">Color RED</Capability>
+  <Capability Min="20" Max="29">Color GREEN</Capability>
+  <Capability Min="30" Max="39">Color BLUE</Capability>
+  <Capability Min="40" Max="49">Color YELLOW</Capability>
+  <Capability Min="50" Max="59">Color ORANGE</Capability>
+  <Capability Min="60" Max="69">Color CYAN</Capability>
+  <Capability Min="70" Max="79">Color PURPLE</Capability>
+  <Capability Min="80" Max="89">Color CYAN-PURPLE</Capability>
+  <Capability Min="90" Max="99">Color CYAN-ORANGE</Capability>
+  <Capability Min="100" Max="109">Color ORANGE-YELLOW</Capability>
+  <Capability Min="110" Max="119">Color YELLOW-BLUE</Capability>
+  <Capability Min="120" Max="129">Color BLAU-GREEN</Capability>
+  <Capability Min="130" Max="139">Color RED-GREEN</Capability>
+  <Capability Min="140" Max="255">Color-slow-to-fast</Capability>
+ </Channel>
+ <Channel Name="Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7">Clear</Capability>
+  <Capability Min="8" Max="15">Rose</Capability>
+  <Capability Min="16" Max="23">Circle of Ovals</Capability>
+  <Capability Min="24" Max="31">Triangle</Capability>
+  <Capability Min="32" Max="39">Star</Capability>
+  <Capability Min="40" Max="47">Sun</Capability>
+  <Capability Min="48" Max="55">Waterwheel</Capability>
+  <Capability Min="56" Max="63">Shattered Glas</Capability>
+  <Capability Min="64" Max="255">Effects</Capability>
+ </Channel>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Unused">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Channel Name="Gobo Effects">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Movement Effects">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="LEDs">
+  <Group Byte="0">Colour</Group>
+ </Channel>
+ <Mode Name="10 channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt Fine</Channel>
+  <Channel Number="4">Color</Channel>
+  <Channel Number="5">Gobo</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">Unused</Channel>
+  <Channel Number="9">Gobo Effects</Channel>
+  <Channel Number="10">Movement Effects</Channel>
+  <Channel Number="11">LEDs</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="11" Height="1"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

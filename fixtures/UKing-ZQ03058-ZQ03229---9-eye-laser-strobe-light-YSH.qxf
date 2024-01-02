@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>wunsch</Author>
+ </Creator>
+ <Manufacturer>UKing</Manufacturer>
+ <Model>ZQ03058 ZQ03229 - 9-eye laser strobe light YSH</Model>
+ <Type>Laser</Type>
+ <Channel Name="Special channel">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="100">Sound Flash</Capability>
+  <Capability Min="151" Max="200">AUTO mode</Capability>
+  <Capability Min="201" Max="255">NO (OFF)</Capability>
+ </Channel>
+ <Channel Name="Red Laser 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Intensity Red Laser 1 (000 - 255)</Capability>
+ </Channel>
+ <Channel Name="Red Laser 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Intensity Red Laser 2 (000 - 255)</Capability>
+ </Channel>
+ <Channel Name="Green Laser">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Intensity Green Laser (000 - 255)</Capability>
+ </Channel>
+ <Channel Name="Blue Laser">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Laser (000 - 255)</Capability>
+ </Channel>
+ <Channel Name="Strobe-Flash">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">OFF</Capability>
+  <Capability Min="1" Max="4">ON</Capability>
+  <Capability Min="5" Max="29">Random Flash</Capability>
+  <Capability Min="30" Max="255">Flash speed slow to fast</Capability>
+ </Channel>
+ <Channel Name="Motor speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Motor speed</Capability>
+ </Channel>
+ <Mode Name="Laser">
+  <Channel Number="0" ActsOn="0">Special channel</Channel>
+  <Channel Number="1" ActsOn="1">Red Laser 1</Channel>
+  <Channel Number="2" ActsOn="2">Red Laser 2</Channel>
+  <Channel Number="3" ActsOn="3">Green Laser</Channel>
+  <Channel Number="4" ActsOn="4">Blue Laser</Channel>
+  <Channel Number="5" ActsOn="5">Strobe-Flash</Channel>
+  <Channel Number="6" ActsOn="6">Motor speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
