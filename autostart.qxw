@@ -4,18 +4,16 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>wunsch</Author>
+  <Author>root</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="ArtNet" UID="192.168.1.61" Line="9">
-     <PluginParameters transmitMode="Partial"/>
-    </Output>
+    <Output Plugin="ArtNet" UID="192.168.1.80" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="X-Touch" Line="0" Profile="Behringer X-Touch Universal Controller Surface (CTRL Mode)"/>
-    <Feedback Plugin="MIDI" UID="X-Touch" Line="1"/>
+    <Input Plugin="MIDI" UID="Midi Through Port-0" Line="0" Profile="Behringer X-Touch Universal Controller Surface (CTRL Mode)"/>
+    <Feedback Plugin="MIDI" UID="X-Touch X-TOUCH_INT" Line="1"/>
    </Universe>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
