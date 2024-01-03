@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>root</Author>
+  <Author>wunsch</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="ArtNet" UID="192.168.1.80" Line="1">
+    <Output Plugin="ArtNet" UID="169.254.186.38" Line="1">
      <PluginParameters transmitMode="Partial"/>
     </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="X-Touch X-TOUCH_INT" Line="1" Profile="Behringer X-Touch Universal Controller Surface (CTRL Mode)"/>
-    <Feedback Plugin="MIDI" UID="X-Touch X-TOUCH_INT" Line="1"/>
+    <Input Plugin="MIDI" UID="None" Line="1" Profile="Behringer X-Touch Universal Controller Surface (CTRL Mode)"/>
+    <Feedback Plugin="MIDI" UID="None" Line="1"/>
    </Universe>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -346,7 +346,7 @@
     <Font>Default</Font>
    </Appearance>
    <XYPad Caption="XY Pad" ID="24" InvertedAppearance="0">
-    <WindowState Visible="False" X="635" Y="20" Width="460" Height="410"/>
+    <WindowState Visible="True" X="635" Y="20" Width="460" Height="410"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -377,7 +377,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="35" Y="475" Width="470" Height="295"/>
+    <WindowState Visible="True" X="35" Y="475" Width="470" Height="295"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -730,7 +730,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="0" Y="35" Width="460" Height="260"/>
+     <WindowState Visible="True" X="0" Y="35" Width="460" Height="260"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -738,7 +738,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Red" ID="46" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="0" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="True" X="0" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -758,7 +758,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Green" ID="47" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="60" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="True" X="60" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -778,7 +778,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Blue" ID="48" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="120" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="True" X="120" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -798,7 +798,7 @@
       </Playback>
      </Slider>
      <Slider Caption="White" ID="49" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="180" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="True" X="180" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -818,7 +818,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Strobe" ID="50" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="300" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="True" X="300" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -836,7 +836,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Motors" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="240" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="True" X="240" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -864,7 +864,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="1110" Y="20" Width="650" Height="330"/>
+    <WindowState Visible="True" X="1110" Y="20" Width="650" Height="330"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -879,7 +879,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="10" Y="40" Width="250" Height="280"/>
+     <WindowState Visible="True" X="10" Y="40" Width="250" Height="280"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -888,7 +888,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Generic RGB Strobe - Black - Scene" ID="54" Icon="">
-      <WindowState Visible="False" X="10" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="True" X="10" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -901,7 +901,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Blue - Scene" ID="55" Icon="">
-      <WindowState Visible="False" X="70" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="True" X="70" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -914,7 +914,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Blue - Scene" ID="56" Icon="">
-      <WindowState Visible="False" X="130" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -927,7 +927,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Green - Scene" ID="57" Icon="">
-      <WindowState Visible="False" X="190" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="True" X="190" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -940,7 +940,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Cyan - Scene" ID="58" Icon="">
-      <WindowState Visible="False" X="10" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -953,7 +953,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Green - Scene" ID="59" Icon="">
-      <WindowState Visible="False" X="70" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="True" X="70" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -966,7 +966,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Cyan - Scene" ID="60" Icon="">
-      <WindowState Visible="False" X="130" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -979,7 +979,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Red - Scene" ID="61" Icon="">
-      <WindowState Visible="False" X="190" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="True" X="190" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -992,7 +992,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Magenta - Scene" ID="62" Icon="">
-      <WindowState Visible="False" X="10" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1005,7 +1005,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Yellow - Scene" ID="63" Icon="">
-      <WindowState Visible="False" X="70" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="70" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1018,7 +1018,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Gray - Scene" ID="64" Icon="">
-      <WindowState Visible="False" X="130" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1031,7 +1031,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Light Gray - Scene" ID="65" Icon="">
-      <WindowState Visible="False" X="190" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="190" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1044,7 +1044,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Red - Scene" ID="66" Icon="">
-      <WindowState Visible="False" X="10" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="True" X="10" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1057,7 +1057,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Magenta - Scene" ID="67" Icon="">
-      <WindowState Visible="False" X="70" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="True" X="70" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1070,7 +1070,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Yellow - Scene" ID="68" Icon="">
-      <WindowState Visible="False" X="130" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1083,7 +1083,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - White - Scene" ID="69" Icon="">
-      <WindowState Visible="False" X="190" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="True" X="190" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1097,7 +1097,7 @@
      </Button>
     </SoloFrame>
     <CueList Caption="16 Colours chaser" ID="70">
-     <WindowState Visible="False" X="265" Y="40" Width="300" Height="220"/>
+     <WindowState Visible="True" X="265" Y="40" Width="300" Height="220"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1113,7 +1113,7 @@
      <Stop/>
     </CueList>
     <Slider Caption="Click &amp; Go RGB" ID="71" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="False" X="580" Y="40" Width="60" Height="200"/>
+     <WindowState Visible="True" X="580" Y="40" Width="60" Height="200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1132,6 +1132,36 @@
      </Playback>
     </Slider>
    </Frame>
+   <Slider Caption="Slider 1" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="85" Y="50" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Knob 2" ID="2" WidgetStyle="Knob" InvertedAppearance="false">
+    <WindowState Visible="True" X="220" Y="100" Width="60" Height="90"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
