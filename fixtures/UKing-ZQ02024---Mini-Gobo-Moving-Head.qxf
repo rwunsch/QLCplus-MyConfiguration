@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.7</Version>
+  <Version>4.13.1</Version>
   <Author>wunsch</Author>
  </Creator>
  <Manufacturer>UKing</Manufacturer>
@@ -57,7 +57,7 @@
  <Channel Name="LEDs">
   <Group Byte="0">Colour</Group>
  </Channel>
- <Mode Name="10 channel">
+ <Mode Name="12 channel">
   <Channel Number="0">Pan</Channel>
   <Channel Number="1">Pan Fine</Channel>
   <Channel Number="2">Tilt</Channel>
