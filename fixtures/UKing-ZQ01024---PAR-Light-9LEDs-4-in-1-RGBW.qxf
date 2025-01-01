@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>wunsch</Author>
+ </Creator>
+ <Manufacturer>UKing</Manufacturer>
+ <Model>ZQ01024 - PAR Light 9LEDs 4-in-1 RGBW</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Total dimming" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Total strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Function selection">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">CH1-CH6control</Capability>
+  <Capability Min="51" Max="100">Common color output （8types）</Capability>
+  <Capability Min="101" Max="150">Color gradient</Capability>
+  <Capability Min="151" Max="200">Colorful gradient</Capability>
+  <Capability Min="201" Max="250">Color jumping</Capability>
+  <Capability Min="251" Max="255">sound control</Capability>
+ </Channel>
+ <Channel Name="Function speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Function speed, from slow to fast (color output for color selection)</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Mode Name="8 channel">
+  <Channel Number="0">Total dimming</Channel>
+  <Channel Number="1">Total strobe</Channel>
+  <Channel Number="2">Function selection</Channel>
+  <Channel Number="3">Function speed</Channel>
+  <Channel Number="4">Red</Channel>
+  <Channel Number="5">Green</Channel>
+  <Channel Number="6">Blue</Channel>
+  <Channel Number="7">White</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="100" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

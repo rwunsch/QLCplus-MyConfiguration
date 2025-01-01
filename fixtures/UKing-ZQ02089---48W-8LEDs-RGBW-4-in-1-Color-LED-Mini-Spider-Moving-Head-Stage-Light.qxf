@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>wunsch</Author>
+ </Creator>
+ <Manufacturer>UKing</Manufacturer>
+ <Model>ZQ02089 - 48W 8LEDs RGBW 4 in 1 Color LED Mini Spider Moving Head Stage Light (15 ch)</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Tilt -Motor1 route (60°---150°)" Preset="PositionTilt"/>
+ <Channel Name="Tilt - Motor2 route (60° - 150°)" Preset="PositionTilt"/>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="LED1&#10;Dimming" Preset="IntensityRed"/>
+ <Channel Name="LED2&#10;Dimming" Preset="IntensityGreen"/>
+ <Channel Name="LED3&#10;Dimming" Preset="IntensityBlue"/>
+ <Channel Name="LED4&#10;Dimming" Preset="IntensityWhite"/>
+ <Channel Name="LED5&#10;Dimming" Preset="IntensityRed"/>
+ <Channel Name="LED6&#10;Dimming" Preset="IntensityGreen"/>
+ <Channel Name="LED7&#10;Dimming" Preset="IntensityBlue"/>
+ <Channel Name="LED8&#10;Dimming" Preset="IntensityWhite"/>
+ <Channel Name="Macro Function">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="8" Max="17">Effect 1</Capability>
+  <Capability Min="18" Max="27">Effect 2</Capability>
+  <Capability Min="28" Max="37">Effect 3</Capability>
+  <Capability Min="38" Max="47">Effect 4</Capability>
+  <Capability Min="48" Max="57">Effect 5</Capability>
+  <Capability Min="58" Max="67">Effect 6</Capability>
+  <Capability Min="68" Max="77">Effect 7</Capability>
+  <Capability Min="78" Max="87">Effect 8</Capability>
+  <Capability Min="88" Max="97">Effect 9</Capability>
+  <Capability Min="98" Max="107">Effect 10</Capability>
+  <Capability Min="108" Max="117">Effect 11</Capability>
+  <Capability Min="118" Max="127">Effect 12</Capability>
+  <Capability Min="128" Max="136">Effect 13</Capability>
+  <Capability Min="137" Max="146">Effect 14</Capability>
+  <Capability Min="147" Max="156">Effect 15</Capability>
+  <Capability Min="157" Max="166">Effect 16</Capability>
+  <Capability Min="167" Max="176">Effect 17</Capability>
+  <Capability Min="177" Max="186">Effect 18</Capability>
+  <Capability Min="187" Max="196">Effect 19</Capability>
+  <Capability Min="197" Max="206">Effect 20</Capability>
+  <Capability Min="207" Max="216">Effect 21</Capability>
+  <Capability Min="217" Max="226">Effect 22</Capability>
+  <Capability Min="227" Max="236">Effect 23</Capability>
+  <Capability Min="237" Max="246">Effect 24 Self-propelled multi-effects</Capability>
+  <Capability Min="247" Max="255">Effect 25 Sound</Capability>
+ </Channel>
+ <Channel Name="Effect Speed">
+  <Group Byte="0">Speed</Group>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="241" Max="255">For 5 seconds to reset</Capability>
+ </Channel>
+ <Mode Name="15 channel">
+  <Channel Number="0">Tilt -Motor1 route (60°---150°)</Channel>
+  <Channel Number="1">Tilt - Motor2 route (60° - 150°)</Channel>
+  <Channel Number="2">Dimmer</Channel>
+  <Channel Number="3">Strobe</Channel>
+  <Channel Number="4">LED1
+Dimming</Channel>
+  <Channel Number="5">LED2
+Dimming</Channel>
+  <Channel Number="6">LED3
+Dimming</Channel>
+  <Channel Number="7">LED4
+Dimming</Channel>
+  <Channel Number="8">LED5
+Dimming</Channel>
+  <Channel Number="9">LED6
+Dimming</Channel>
+  <Channel Number="10">LED7
+Dimming</Channel>
+  <Channel Number="11">LED8
+Dimming</Channel>
+  <Channel Number="12">Macro Function</Channel>
+  <Channel Number="13">Effect Speed</Channel>
+  <Channel Number="14">Reset</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="48" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
