@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.7</Version>
+  <Version>4.13.1</Version>
   <Author>wunsch</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0">
-    <Output Plugin="ArtNet" UID="169.254.186.38" Line="1">
-     <PluginParameters transmitMode="Partial"/>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 0" ID="0">
+    <Output Plugin="ArtNet" UID="192.168.0.55" Line="6">
+     <PluginParameters transmitMode="Full"/>
     </Output>
    </Universe>
-   <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="1" Profile="Behringer X-Touch Universal Controller Surface (CTRL Mode)"/>
-    <Feedback Plugin="MIDI" UID="None" Line="1"/>
+   <Universe Name="Universe 1" ID="1">
+    <Output Plugin="ArtNet" UID="192.168.0.55" Line="6">
+     <PluginParameters transmitMode="Full"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
-   <Universe Name="Universe 5" ID="4"/>
+   <Universe Name="Universe 5" ID="4">
+    <Input Plugin="MIDI" UID="None" Line="0" Profile="Behringer X-Touch Universal Controller Surface (CTRL Mode)"/>
+    <Feedback Plugin="MIDI" UID="None" Line="1"/>
+   </Universe>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>ETEC</Manufacturer>
@@ -27,29 +32,9 @@
    <Mode>15 channel Mode</Mode>
    <ID>0</ID>
    <Name>LED Partybar 2</Name>
-   <Universe>0</Universe>
+   <Universe>1</Universe>
    <Address>0</Address>
    <Channels>15</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>UKing</Manufacturer>
-   <Model>ZQ02024 - Mini Gobo Moving Head</Model>
-   <Mode>10 channel</Mode>
-   <ID>1</ID>
-   <Name>ZQ02024 - Mini Gobo Moving Head #1</Name>
-   <Universe>0</Universe>
-   <Address>15</Address>
-   <Channels>12</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>UKing</Manufacturer>
-   <Model>ZQ02024 - Mini Gobo Moving Head</Model>
-   <Mode>10 channel</Mode>
-   <ID>2</ID>
-   <Name>ZQ02024 - Mini Gobo Moving Head #2</Name>
-   <Universe>0</Universe>
-   <Address>27</Address>
-   <Channels>12</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>UKing</Manufacturer>
@@ -62,48 +47,83 @@
    <Channels>7</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGB Strobe</Model>
-   <Mode>RGB</Mode>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>ZQ02089 - 48W 8LEDs RGBW 4 in 1 Color LED Mini Spider Moving Head Stage Light (15 ch)</Model>
+   <Mode>15 channel</Mode>
    <ID>4</ID>
-   <Name>Generic RGB </Name>
+   <Name>ZQ02089 - 48W 8LEDs RGBW 4 in 1 Color LED Mini Spider Moving Head Stage Light (15 ch) #1</Name>
    <Universe>0</Universe>
-   <Address>46</Address>
-   <Channels>5</Channels>
+   <Address>99</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>ZQ02089 - 48W 8LEDs RGBW 4 in 1 Color LED Mini Spider Moving Head Stage Light (15 ch)</Model>
+   <Mode>15 channel</Mode>
+   <ID>6</ID>
+   <Name>ZQ02089 - 48W 8LEDs RGBW 4 in 1 Color LED Mini Spider Moving Head Stage Light (15 ch) #2</Name>
+   <Universe>0</Universe>
+   <Address>114</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>ZQ01024 - PAR Light 9LEDs 4-in-1 RGBW</Model>
+   <Mode>8 channel</Mode>
+   <ID>7</ID>
+   <Name>ZQ01024 - PAR Light 9LEDs 4-in-1 RGBW #1</Name>
+   <Universe>0</Universe>
+   <Address>129</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>ZQ01024 - PAR Light 9LEDs 4-in-1 RGBW</Model>
+   <Mode>8 channel</Mode>
+   <ID>8</ID>
+   <Name>ZQ01024 - PAR Light 9LEDs 4-in-1 RGBW #2</Name>
+   <Universe>0</Universe>
+   <Address>137</Address>
+   <Channels>8</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Moving Heads</Name>
    <Size X="4" Y="1"/>
-   <Head X="0" Y="0" Fixture="1">0</Head>
-   <Head X="0" Y="1" Fixture="2">0</Head>
+   <Head X="2" Y="0" Fixture="4">0</Head>
+   <Head X="3" Y="0" Fixture="6">0</Head>
+   <Head X="1" Y="1" Fixture="7">0</Head>
+   <Head X="2" Y="1" Fixture="8">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>RGB Panel</Name>
    <Size X="10" Y="10"/>
-   <Head X="0" Y="0" Fixture="4">0</Head>
    <Head X="0" Y="10" Fixture="0">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="2">
    <Name>RGB Group</Name>
    <Size X="1" Y="1"/>
-   <Head X="0" Y="0" Fixture="4">0</Head>
    <Head X="0" Y="1" Fixture="0">0</Head>
   </FixtureGroup>
-  <ChannelsGroup ID="0" Name="Red channel" Value="0">0,0,0,5,0,9,3,1,3,2,4,0</ChannelsGroup>
-  <ChannelsGroup ID="1" Name="Green channel" Value="0">0,1,0,6,0,10,3,3,4,1</ChannelsGroup>
-  <ChannelsGroup ID="2" Name="Blue channel" Value="0">0,2,0,7,0,11,3,4,4,2</ChannelsGroup>
-  <ChannelsGroup ID="3" Name="Strobe channel" Value="0">0,14,3,5,4,4</ChannelsGroup>
-  <ChannelsGroup ID="4" Name="Moving Head - Color" Value="0">1,4,2,4</ChannelsGroup>
-  <ChannelsGroup ID="5" Name="Moving Head - Intensity" Value="0">1,7,2,7</ChannelsGroup>
-  <ChannelsGroup ID="6" Name="Moving Head - Pan" Value="0">1,0,2,0</ChannelsGroup>
-  <ChannelsGroup ID="7" Name="Moving Head - Tilt" Value="0">1,2,2,2</ChannelsGroup>
-  <ChannelsGroup ID="8" Name="Moving Head - Gobo" Value="0">1,5,2,5</ChannelsGroup>
-  <ChannelsGroup ID="9" Name="Moving Head - Strobe" Value="0">1,6,2,6</ChannelsGroup>
-  <ChannelsGroup ID="10" Name="Moving Head - Gobo Effects" Value="0">1,9,2,9</ChannelsGroup>
-  <ChannelsGroup ID="11" Name="Moving Head - Movement Effects" Value="0">1,10,2,10</ChannelsGroup>
-  <ChannelsGroup ID="12" Name="Moving Heads - LEDs" Value="0">1,11,2,11</ChannelsGroup>
-  <ChannelsGroup ID="13" Name="White Channel" Value="0">0,3,0,8,0,12</ChannelsGroup>
+  <ChannelsGroup ID="19" Name="Dimmer" Value="0">4,2,6,2,7,0,8,0</ChannelsGroup>
+  <ChannelsGroup ID="0" Name="Red channel" Value="0">0,0,0,5,0,9,3,1,3,2,4,4,4,8,6,4,6,8,7,4,8,4</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="Green channel" Value="0">0,1,0,6,0,10,3,3,4,5,4,9,6,5,6,9,7,5,8,5</ChannelsGroup>
+  <ChannelsGroup ID="2" Name="Blue channel" Value="0">0,2,0,7,0,11,3,4,4,6,4,10,6,6,6,10,7,6,8,6</ChannelsGroup>
+  <ChannelsGroup ID="13" Name="White Channel" Value="0">0,3,0,8,0,12,4,7,4,11,6,7,6,11,7,7,8,7</ChannelsGroup>
+  <ChannelsGroup ID="3" Name="Strobe channel" Value="0">0,14,3,5,4,3,6,3</ChannelsGroup>
+  <ChannelsGroup ID="4" Name="Moving Head - Color" Value="0"/>
+  <ChannelsGroup ID="5" Name="Moving Head - Intensity" Value="0"/>
+  <ChannelsGroup ID="6" Name="Moving Head - Pan" Value="0"/>
+  <ChannelsGroup ID="7" Name="Moving Head - Tilt" Value="0"/>
+  <ChannelsGroup ID="8" Name="Moving Head - Gobo" Value="0"/>
+  <ChannelsGroup ID="9" Name="Moving Head - Strobe" Value="0"/>
+  <ChannelsGroup ID="10" Name="Moving Head - Gobo Effects" Value="0"/>
+  <ChannelsGroup ID="11" Name="Moving Head - Movement Effects" Value="0"/>
+  <ChannelsGroup ID="12" Name="Moving Heads - LEDs" Value="0"/>
   <ChannelsGroup ID="14" Name="Motor Channel" Value="0">0,4,0,13</ChannelsGroup>
+  <ChannelsGroup ID="15" Name="Spider Effects" Value="0">4,12,6,12</ChannelsGroup>
+  <ChannelsGroup ID="16" Name="Spider Effect Speed" Value="0">4,13,6,13</ChannelsGroup>
+  <ChannelsGroup ID="17" Name="Spider Motor 1" Value="0">4,0,6,0</ChannelsGroup>
+  <ChannelsGroup ID="18" Name="Spider Motor 2" Value="0">4,1,6,1</ChannelsGroup>
   <Function ID="0" Type="Show" Name="Test Show">
    <TimeDivision Type="Time" BPM="120"/>
   </Function>
@@ -128,20 +148,6 @@
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0</FixtureVal>
   </Function>
   <Function ID="7" Type="EFX" Name="New EFX 7">
-   <Fixture>
-    <ID>1</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>0</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>2</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>0</StartOffset>
-   </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
    <Direction>Forward</Direction>
@@ -171,7 +177,6 @@
   <Function ID="10" Type="Scene" Name="" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>0,255,1,0,2,255,3,0</ChannelGroupsVal>
-   <FixtureVal ID="4">0,0,1,0,2,0,4,0</FixtureVal>
    <FixtureVal ID="0">0,0,1,0,2,0,5,0,6,0,7,0,9,0,10,0,11,0,14,0</FixtureVal>
    <FixtureVal ID="3">1,0,2,0,3,0,4,0,5,0</FixtureVal>
   </Function>
@@ -214,67 +219,51 @@
   </Function>
   <Function ID="33" Type="Scene" Name="Generic RGB Strobe - Black - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="34" Type="Scene" Name="Generic RGB Strobe - Dark Blue - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,0,2,128</FixtureVal>
   </Function>
   <Function ID="35" Type="Scene" Name="Generic RGB Strobe - Blue - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="36" Type="Scene" Name="Generic RGB Strobe - Dark Green - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,128,2,0</FixtureVal>
   </Function>
   <Function ID="37" Type="Scene" Name="Generic RGB Strobe - Dark Cyan - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,128,2,128</FixtureVal>
   </Function>
   <Function ID="38" Type="Scene" Name="Generic RGB Strobe - Green - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,255,2,0</FixtureVal>
   </Function>
   <Function ID="39" Type="Scene" Name="Generic RGB Strobe - Cyan - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="40" Type="Scene" Name="Generic RGB Strobe - Dark Red - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,128,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="41" Type="Scene" Name="Generic RGB Strobe - Dark Magenta - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,128,1,0,2,128</FixtureVal>
   </Function>
   <Function ID="42" Type="Scene" Name="Generic RGB Strobe - Dark Yellow - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,128,1,128,2,0</FixtureVal>
   </Function>
   <Function ID="43" Type="Scene" Name="Generic RGB Strobe - Dark Gray - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,128,1,128,2,128</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="Generic RGB Strobe - Light Gray - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,192,1,192,2,192</FixtureVal>
   </Function>
   <Function ID="45" Type="Scene" Name="Generic RGB Strobe - Red - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="46" Type="Scene" Name="Generic RGB Strobe - Magenta - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="47" Type="Scene" Name="Generic RGB Strobe - Yellow - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,255,2,0</FixtureVal>
   </Function>
   <Function ID="48" Type="Scene" Name="Generic RGB Strobe - White - Scene" Path="Generic PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="49" Type="Chaser" Name="16 Colours chaser - Generic RGB Strobe">
    <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
@@ -326,14 +315,10 @@
   <Function ID="55" Type="Scene" Name="Moving Head - Green" Path="Moving Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>4,26,5,255</ChannelGroupsVal>
-   <FixtureVal ID="1">4,26,7,255</FixtureVal>
-   <FixtureVal ID="2">4,26,7,255</FixtureVal>
   </Function>
   <Function ID="56" Type="Scene" Name="Moving Head - Red" Path="Moving Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,255,4,18</ChannelGroupsVal>
-   <FixtureVal ID="1">4,18,7,255</FixtureVal>
-   <FixtureVal ID="2">4,18,7,255</FixtureVal>
   </Function>
  </Engine>
  <VirtualConsole>
@@ -346,7 +331,7 @@
     <Font>Default</Font>
    </Appearance>
    <XYPad Caption="XY Pad" ID="24" InvertedAppearance="0">
-    <WindowState Visible="True" X="635" Y="20" Width="460" Height="410"/>
+    <WindowState Visible="False" X="635" Y="20" Width="460" Height="410"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -377,7 +362,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="35" Y="475" Width="470" Height="295"/>
+    <WindowState Visible="False" X="35" Y="475" Width="470" Height="295"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -430,7 +415,7 @@
       </Appearance>
       <Input Universe="1" Channel="70"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="2">
+      <Level LowLimit="0" HighLimit="255" Value="110">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -448,7 +433,7 @@
       </Appearance>
       <Input Universe="1" Channel="71"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="16">
        <Channel Fixture="0">1</Channel>
       </Level>
       <Playback>
@@ -466,7 +451,7 @@
       </Appearance>
       <Input Universe="1" Channel="72"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="84">
        <Channel Fixture="0">2</Channel>
       </Level>
       <Playback>
@@ -484,7 +469,7 @@
       </Appearance>
       <Input Universe="1" Channel="73"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="130">
        <Channel Fixture="0">3</Channel>
       </Level>
       <Playback>
@@ -536,7 +521,7 @@
       </Appearance>
       <Input Universe="1" Channel="65606"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="110">
        <Channel Fixture="0">5</Channel>
       </Level>
       <Playback>
@@ -554,7 +539,7 @@
       </Appearance>
       <Input Universe="1" Channel="65607"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="16">
        <Channel Fixture="0">6</Channel>
       </Level>
       <Playback>
@@ -572,7 +557,7 @@
       </Appearance>
       <Input Universe="1" Channel="65608"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="84">
        <Channel Fixture="0">7</Channel>
       </Level>
       <Playback>
@@ -590,7 +575,7 @@
       </Appearance>
       <Input Universe="1" Channel="65609"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="130">
        <Channel Fixture="0">8</Channel>
       </Level>
       <Playback>
@@ -642,7 +627,7 @@
       </Appearance>
       <Input Universe="1" Channel="131142"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="6">
+      <Level LowLimit="0" HighLimit="255" Value="110">
        <Channel Fixture="0">9</Channel>
       </Level>
       <Playback>
@@ -660,7 +645,7 @@
       </Appearance>
       <Input Universe="1" Channel="131143"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="16">
        <Channel Fixture="0">10</Channel>
       </Level>
       <Playback>
@@ -678,7 +663,7 @@
       </Appearance>
       <Input Universe="1" Channel="131144"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="84">
        <Channel Fixture="0">11</Channel>
       </Level>
       <Playback>
@@ -696,7 +681,7 @@
       </Appearance>
       <Input Universe="1" Channel="131145"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="130">
        <Channel Fixture="0">12</Channel>
       </Level>
       <Playback>
@@ -730,7 +715,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="0" Y="35" Width="460" Height="260"/>
+     <WindowState Visible="False" X="0" Y="35" Width="460" Height="260"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -738,7 +723,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Red" ID="46" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="0" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="False" X="0" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -746,9 +731,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="1" Channel="196678"/>
+      <Input Universe="4" Channel="196678"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="202">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
        <Channel Fixture="0">5</Channel>
        <Channel Fixture="0">9</Channel>
@@ -758,7 +743,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Green" ID="47" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="60" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="False" X="60" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -766,9 +751,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="1" Channel="196679"/>
+      <Input Universe="4" Channel="196679"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="187">
+      <Level LowLimit="0" HighLimit="255" Value="16">
        <Channel Fixture="0">1</Channel>
        <Channel Fixture="0">6</Channel>
        <Channel Fixture="0">10</Channel>
@@ -778,7 +763,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Blue" ID="48" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="120" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="False" X="120" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -786,9 +771,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="1" Channel="196680"/>
+      <Input Universe="4" Channel="196680"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="197">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">2</Channel>
        <Channel Fixture="0">7</Channel>
        <Channel Fixture="0">11</Channel>
@@ -798,7 +783,7 @@
       </Playback>
      </Slider>
      <Slider Caption="White" ID="49" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="180" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="False" X="180" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -806,9 +791,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="1" Channel="196681"/>
+      <Input Universe="4" Channel="196682"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="188">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">3</Channel>
        <Channel Fixture="0">8</Channel>
        <Channel Fixture="0">12</Channel>
@@ -818,7 +803,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Strobe" ID="50" Page="3" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="300" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="False" X="300" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -826,7 +811,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="1" Channel="196683"/>
+      <Input Universe="4" Channel="196684"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">14</Channel>
@@ -836,7 +821,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Motors" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="240" Y="0" Width="60" Height="260"/>
+      <WindowState Visible="False" X="240" Y="0" Width="60" Height="260"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -844,7 +829,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="1" Channel="74"/>
+      <Input Universe="4" Channel="75"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">4</Channel>
@@ -864,7 +849,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1110" Y="20" Width="650" Height="330"/>
+    <WindowState Visible="False" X="1110" Y="20" Width="650" Height="330"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -879,7 +864,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="10" Y="40" Width="250" Height="280"/>
+     <WindowState Visible="False" X="10" Y="40" Width="250" Height="280"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -888,7 +873,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Generic RGB Strobe - Black - Scene" ID="54" Icon="">
-      <WindowState Visible="True" X="10" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="False" X="10" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -901,7 +886,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Blue - Scene" ID="55" Icon="">
-      <WindowState Visible="True" X="70" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="False" X="70" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -914,7 +899,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Blue - Scene" ID="56" Icon="">
-      <WindowState Visible="True" X="130" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="False" X="130" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -927,7 +912,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Green - Scene" ID="57" Icon="">
-      <WindowState Visible="True" X="190" Y="40" Width="50" Height="50"/>
+      <WindowState Visible="False" X="190" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -940,7 +925,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Cyan - Scene" ID="58" Icon="">
-      <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="False" X="10" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -953,7 +938,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Green - Scene" ID="59" Icon="">
-      <WindowState Visible="True" X="70" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="False" X="70" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -966,7 +951,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Cyan - Scene" ID="60" Icon="">
-      <WindowState Visible="True" X="130" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="False" X="130" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -979,7 +964,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Red - Scene" ID="61" Icon="">
-      <WindowState Visible="True" X="190" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="False" X="190" Y="100" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -992,7 +977,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Magenta - Scene" ID="62" Icon="">
-      <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="False" X="10" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1005,7 +990,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Yellow - Scene" ID="63" Icon="">
-      <WindowState Visible="True" X="70" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="False" X="70" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1018,7 +1003,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Dark Gray - Scene" ID="64" Icon="">
-      <WindowState Visible="True" X="130" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="False" X="130" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1031,7 +1016,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Light Gray - Scene" ID="65" Icon="">
-      <WindowState Visible="True" X="190" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="False" X="190" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1044,7 +1029,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Red - Scene" ID="66" Icon="">
-      <WindowState Visible="True" X="10" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="False" X="10" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1057,7 +1042,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Magenta - Scene" ID="67" Icon="">
-      <WindowState Visible="True" X="70" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="False" X="70" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1070,7 +1055,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - Yellow - Scene" ID="68" Icon="">
-      <WindowState Visible="True" X="130" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="False" X="130" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1083,7 +1068,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Generic RGB Strobe - White - Scene" ID="69" Icon="">
-      <WindowState Visible="True" X="190" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="False" X="190" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1097,7 +1082,7 @@
      </Button>
     </SoloFrame>
     <CueList Caption="16 Colours chaser" ID="70">
-     <WindowState Visible="True" X="265" Y="40" Width="300" Height="220"/>
+     <WindowState Visible="False" X="265" Y="40" Width="300" Height="220"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1113,7 +1098,7 @@
      <Stop/>
     </CueList>
     <Slider Caption="Click &amp; Go RGB" ID="71" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="580" Y="40" Width="60" Height="200"/>
+     <WindowState Visible="False" X="580" Y="40" Width="60" Height="200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1122,18 +1107,14 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="RGB" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="128">
-      <Channel Fixture="4">0</Channel>
-      <Channel Fixture="4">1</Channel>
-      <Channel Fixture="4">2</Channel>
-     </Level>
+     <Level LowLimit="0" HighLimit="255" Value="128"/>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
     </Slider>
    </Frame>
    <Slider Caption="Slider 1" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="85" Y="50" Width="60" Height="200"/>
+    <WindowState Visible="False" X="85" Y="50" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1148,7 +1129,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Knob 2" ID="2" WidgetStyle="Knob" InvertedAppearance="false">
-    <WindowState Visible="True" X="220" Y="100" Width="60" Height="90"/>
+    <WindowState Visible="False" X="220" Y="100" Width="60" Height="90"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
