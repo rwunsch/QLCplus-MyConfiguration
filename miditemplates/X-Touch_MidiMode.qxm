@@ -1,0 +1,9 @@
+<!DOCTYPE MidiTemplate>
+<MidiTemplate>
+ <Creator>
+  <Author>wunsch</Author>
+ </Creator>
+ <Description>Sets the X-Touch into MIDI Mode.</Description>
+ <Name>X Touch Midi Mode</Name>
+ <InitMessage>F0 00 20 32 15 4E 00 01 F7</InitMessage>
+</MidiTemplate>
