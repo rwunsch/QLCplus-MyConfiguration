@@ -3,7 +3,7 @@
 <InputProfile xmlns="http://www.qlcplus.org/InputProfile">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.7</Version>
+  <Version>4.13.1</Version>
   <Author>wunsch</Author>
  </Creator>
  <Manufacturer>Behringer</Manufacturer>
@@ -48,38 +48,47 @@
  <Channel Number="80">
   <Name>Turning-Knob 1</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="81">
   <Name>Turning-Knob 2</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="82">
   <Name>Turning-Knob 3</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="83">
   <Name>Turning-Knob 4</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="84">
   <Name>Turning-Knob 5</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="85">
   <Name>Turning-Knob 6</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="86">
   <Name>Turning-Knob 7</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="87">
   <Name>Turning-Knob 8</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="88">
   <Name>JogWheel</Name>
   <Type>Knob</Type>
+  <Movement Sensitivity="10">Relative</Movement>
  </Channel>
  <Channel Number="128">
   <Name>Turning-Knob Click 1</Name>
