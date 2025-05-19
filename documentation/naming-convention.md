@@ -8,10 +8,10 @@ This document describes the comprehensive naming convention for QLC+ configurati
 
 The naming convention follows this structured format:
 ```
-[Function-Type]_[Fixture-Type]:[Position]:[Color]:[Movement/Orientation]:[Effect]
+[Function-Type]_[Fixture-Type]:[Position]:[Color]:[Movement/Orientation]:[Effect] (Optional Descriptive Name)
 ```
 
-Note that an underscore "_" is used after the Function Type, while colons ":" separate all other components.
+Note that an underscore "_" is used after the Function Type, while colons ":" separate all other components. An optional descriptive name in parentheses can be added at the end for clarity or quicker identification.
 
 ### Function Type (Required)
 - **SCN** - Scene
@@ -92,12 +92,12 @@ Below are examples of applying the naming convention to various QLC+ functions:
 
 | Current Name | New Name | Description |
 |-------------|----------|-------------|
-| `MovingHead - L - RED` | `SCN_MH:L:R:STT` | Scene for Left Moving Head, Red color, Static position |
+| `MovingHead - L - RED` | `SCN_MH:L:R:STT (LeftRed)` | Scene for Left Moving Head, Red color, Static position |
 | `MovingHead - C - GREEN` | `SCN_MH:C:G:STT` | Scene for Center Moving Head, Green color, Static position |
 | `MovingHead - R - BLUE` | `SCN_MH:R:B:STT` | Scene for Right Moving Head, Blue color, Static position |
 | `MovingHead - RCL - CYAN` | `SCN_MH:RCL:C` | Scene for all Moving Heads, Cyan color |
-| `MovingHead - White Away` | `SCN_MH:RCL:W:AW` | Scene for all Moving Heads, White color, Away orientation |
-| `MovingHead - White Center` | `SCN_MH:RCL:W:IN` | Scene for all Moving Heads, White color, Inward orientation |
+| `MovingHead - White Away` | `SCN_MH:RCL:W:AW (AwayFacing)` | Scene for all Moving Heads, White color, Away orientation |
+| `MovingHead - White Center` | `SCN_MH:RCL:W:IN (CenterFacing)` | Scene for all Moving Heads, White color, Inward orientation |
 
 ### PAR Light Scenes
 
@@ -112,18 +112,18 @@ Below are examples of applying the naming convention to various QLC+ functions:
 
 | Current Name | New Name | Description |
 |-------------|----------|-------------|
-| `MovingHead L - CirlceLeft` | `EFX_MH:L:RGB:CIRL` | Effect for Left Moving Head, RGB colors, Circle Left movement |
-| `MovingHead RCL - CircleRight` | `EFX_MH:RCL:RGB:CIRR` | Effect for all Moving Heads, RGB colors, Circle Right movement |
-| `MovingHead RCL - Line UpDown` | `EFX_MH:RCL:RGB:LNUD` | Effect for all Moving Heads, RGB colors, Line Up/Down movement |
-| `MovingHead RCL - Choppy` | `EFX_MH:RCL:RGB:CHY` | Effect for all Moving Heads, RGB colors, Choppy movement |
+| `MovingHead L - CirlceLeft` | `EFX_MH:L:RGB:CIRL (MH-CircleLeft)` | Effect for Left Moving Head, RGB colors, Circle Left movement |
+| `MovingHead RCL - CircleRight` | `EFX_MH:RCL:RGB:CIRR (AllCircleRight)` | Effect for all Moving Heads, RGB colors, Circle Right movement |
+| `MovingHead RCL - Line UpDown` | `EFX_MH:RCL:RGB:LNUD (UpDown)` | Effect for all Moving Heads, RGB colors, Line Up/Down movement |
+| `MovingHead RCL - Choppy` | `EFX_MH:RCL:RGB:CHY (ChopMove)` | Effect for all Moving Heads, RGB colors, Choppy movement |
 
 ### Chasers
 
 | Current Name | New Name | Description |
 |-------------|----------|-------------|
-| `PAR COLOR` | `CHR_PAR:RCL:MC:RND` | Chaser for all PAR lights, Multiple colors, Random order |
-| `PAR RED (Night Rider)` | `CHR_PAR:RCL:R:NR` | Chaser for all PAR lights, Red color, Night Rider effect |
-| `RGB Chaser` | `CHR_PB:A:RGB:LOOP` | Chaser for Party Bar, All positions, RGB colors, Looping |
+| `PAR COLOR` | `CHR_PAR:RCL:MC:RND (RandomColor)` | Chaser for all PAR lights, Multiple colors, Random order |
+| `PAR RED (Night Rider)` | `CHR_PAR:RCL:R:NR (NightRider)` | Chaser for all PAR lights, Red color, Night Rider effect |
+| `RGB Chaser` | `CHR_PB:A:RGB:LOOP (ColorLoop)` | Chaser for Party Bar, All positions, RGB colors, Looping |
 
 ### Spider Light Scenes
 
