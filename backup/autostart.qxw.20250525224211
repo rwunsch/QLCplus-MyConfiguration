@@ -4,16 +4,16 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
-  <Author></Author>
+  <Author>wunsch</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 0 - Rack" ID="0">
-    <Output Plugin="ArtNet" UID="None" Line="9"/>
+    <Output Plugin="ArtNet" UID="192.168.0.89" Line="9"/>
    </Universe>
    <Universe Name="Universe 1 - Lightbar" ID="1">
-    <Output Plugin="ArtNet" UID="None" Line="7"/>
+    <Output Plugin="ArtNet" UID="172.24.32.1" Line="7"/>
    </Universe>
    <Universe Name="Universe 2" ID="2"/>
    <Universe Name="Universe 3" ID="3"/>
@@ -211,7 +211,7 @@
   <Function ID="6" Type="Scene" Name="SCN_PB:A:BGR (BlueGreenRed)" Path="Partybar">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="7" Type="EFX" Name="EFX_MH:L:RGB:CIRL (MH-CircleLeft)">
+  <Function ID="7" Type="EFX" Name="EFX_MH:L:RGB:CIRL (MH-CircleLeft)" Path="MovingHead">
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
@@ -244,7 +244,7 @@
    <Step Number="0">7</Step>
    <Step Number="1">21</Step>
   </Function>
-  <Function ID="9" Type="EFX" Name="EFX_MH:RCL:RGB:CIRR">
+  <Function ID="9" Type="EFX" Name="EFX_MH:RCL:RGB:CIRR" Path="MovingHead">
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
@@ -291,7 +291,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>0,255,1,0,2,255,3,0</ChannelGroupsVal>
   </Function>
-  <Function ID="11" Type="EFX" Name="EFX_MH:R:RGB:CIRL (Right-CircleLeft)">
+  <Function ID="11" Type="EFX" Name="EFX_MH:R:RGB:CIRL (Right-CircleLeft)" Path="MovingHead">
    <Fixture>
     <ID>2</ID>
     <Head>0</Head>
@@ -349,7 +349,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">4</Step>
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">3</Step>
   </Function>
-  <Function ID="16" Type="EFX" Name="EFX_MH:RCL:RGB:CIRL (AllCircleLeft)">
+  <Function ID="16" Type="EFX" Name="EFX_MH:RCL:RGB:CIRL (AllCircleLeft)" Path="MovingHead">
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
@@ -392,7 +392,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="17" Type="EFX" Name="EFX_MH:C:RGB:CIRL (Center-CircleLeft)">
+  <Function ID="17" Type="EFX" Name="EFX_MH:C:RGB:CIRL (Center-CircleLeft)" Path="MovingHead">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
@@ -421,7 +421,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="18" Type="EFX" Name="EFX_MH:RCL:RGB:LNUD (UpDown)">
+  <Function ID="18" Type="EFX" Name="EFX_MH:RCL:RGB:LNUD (UpDown)" Path="MovingHead">
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
@@ -464,7 +464,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="19" Type="EFX" Name="EFX_MH:C:RGB:CIRR (Center-CircleRight)">
+  <Function ID="19" Type="EFX" Name="EFX_MH:C:RGB:CIRR (Center-CircleRight)" Path="MovingHead">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
@@ -493,7 +493,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="20" Type="EFX" Name="EFX_MH:L:RGB:CIRR (Left-CircleRight)">
+  <Function ID="20" Type="EFX" Name="EFX_MH:L:RGB:CIRR (Left-CircleRight)" Path="MovingHead">
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
@@ -522,7 +522,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="21" Type="EFX" Name="EFX_MH:R:RGB:CIRR (Right-CircleRight)">
+  <Function ID="21" Type="EFX" Name="EFX_MH:R:RGB:CIRR (Right-CircleRight)" Path="MovingHead">
    <Fixture>
     <ID>2</ID>
     <Head>0</Head>
@@ -551,7 +551,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="22" Type="EFX" Name="EFX_MH:RCL:RGB:CHY (ChopMove)">
+  <Function ID="22" Type="EFX" Name="EFX_MH:RCL:RGB:CHY (ChopMove)" Path="MovingHead">
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
@@ -847,11 +847,10 @@
    <FixtureVal ID="5"/>
    <FixtureVal ID="6"/>
   </Function>
-  <Function ID="72" Type="Script" Name="Fog-Machine-ON - Shelly">
+  <Function ID="72" Type="Script" Name="New Script 72">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Command>systemcommand%3A%2Fusr%2Fbin%2Fcurl%20arg%3A-fsS%20arg%3A-m%20arg%3A2%20arg%3Ahttp%3A%2F%2F192.168.1.86%2Frelay%2F0%3Fturn%3Don</Command>
   </Function>
   <Function ID="73" Type="Scene" Name="SCN_PAR:L:B" Path="PAR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1413,12 +1412,6 @@
    <Step Number="0">157</Step>
    <Step Number="1">153</Step>
   </Function>
-  <Function ID="175" Type="Script" Name="Fog-Machine-OFF- Shelly">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Command>systemcommand%3A%2Fusr%2Fbin%2Fcurl%20arg%3A-fsS%20arg%3A-m%20arg%3A2%20arg%3Ahttp%3A%2F%2F192.168.1.86%2Frelay%2F0%3Fturn%3Doff</Command>
-  </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>DejaVu Sans Condensed,7,-1,5,50,0,0,0,0,0,Book</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -1546,7 +1539,7 @@
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
+    <Disabled>True</Disabled>
     <Multipage PagesNum="6" CurrentPage="0"/>
     <Next>
      <Input Universe="4" Channel="221"/>
@@ -1585,10 +1578,10 @@
      </Previous>
      <Shortcut Page="0" Name="ALL"/>
      <Shortcut Page="1" Name="Right"/>
-     <Shortcut Page="2" Name="Center"/>
-     <Shortcut Page="3" Name="Left"/>
+     <Shortcut Page="1" Name="Center"/>
+     <Shortcut Page="1" Name="Left"/>
      <PagesLoop>True</PagesLoop>
-     <Frame Caption="ALL" ID="107">
+     <Frame Caption="" ID="107">
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2356,7 +2349,7 @@
        </Appearance>
        <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
        <Reset/>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="240">
         <Channel Fixture="7">1</Channel>
        </Level>
        <Playback>
@@ -3839,7 +3832,7 @@
        </Appearance>
        <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
        <Reset/>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="240">
         <Channel Fixture="9">4</Channel>
        </Level>
        <Playback>
@@ -3897,6 +3890,24 @@
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
        <Reset/>
        <Level LowLimit="254" HighLimit="255" Value="254"/>
+       <Playback>
+        <Function>4294967295</Function>
+       </Playback>
+      </Slider>
+      <Slider Caption="Strobe" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
+       <WindowState Visible="False" X="0" Y="0" Width="50" Height="310"/>
+       <Appearance>
+        <FrameStyle>Sunken</FrameStyle>
+        <ForegroundColor>Default</ForegroundColor>
+        <BackgroundColor>4292993505</BackgroundColor>
+        <BackgroundImage>None</BackgroundImage>
+        <Font>DejaVu Sans Condensed,7,-1,5,50,0,0,0,0,0</Font>
+       </Appearance>
+       <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+       <Reset/>
+       <Level LowLimit="0" HighLimit="255" Value="240">
+        <Channel Fixture="9">4</Channel>
+       </Level>
        <Playback>
         <Function>4294967295</Function>
        </Playback>
@@ -4004,7 +4015,7 @@
        </Appearance>
        <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
        <Reset/>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="240">
         <Channel Fixture="7">1</Channel>
        </Level>
        <Playback>
@@ -4158,7 +4169,7 @@
        </Appearance>
        <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
        <Reset/>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="240">
         <Channel Fixture="7">1</Channel>
         <Channel Fixture="8">1</Channel>
        </Level>
@@ -4218,7 +4229,7 @@
        </Appearance>
        <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="true">Level</SliderMode>
        <Reset/>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="240">
         <Channel Fixture="9">4</Channel>
        </Level>
        <Playback>
@@ -4270,7 +4281,7 @@
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
+     <Disabled>True</Disabled>
      <Multipage PagesNum="4" CurrentPage="0"/>
      <Next>
       <Input Universe="4" Channel="65759"/>
@@ -4297,7 +4308,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Color" ID="284" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -4451,7 +4462,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="RCL Circle Left" ID="300" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -4813,7 +4824,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="RL Circle RL" ID="321" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -5124,7 +5135,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Color" ID="142" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -5290,7 +5301,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 300" ID="175" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -5541,7 +5552,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 321" ID="194" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -5823,7 +5834,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Color" ID="580" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -5987,7 +5998,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 300" ID="589" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -6238,7 +6249,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 321" ID="608" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -6520,7 +6531,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Color" ID="629" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -6686,7 +6697,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 300" ID="663" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -6937,7 +6948,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 321" ID="704" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -7202,7 +7213,7 @@
      <Action>Blackout</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
-    <Frame Caption="SPIDERs" ID="399" Page="2">
+    <Frame Caption="" ID="399" Page="2">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -7216,7 +7227,7 @@
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
+     <Disabled>True</Disabled>
      <Multipage PagesNum="3" CurrentPage="0"/>
      <Shortcut Page="0" Name="ALL"/>
      <Shortcut Page="1" Name="Right"/>
@@ -7236,7 +7247,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Slider 231" ID="343" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -7492,7 +7503,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 359" ID="359" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -7775,7 +7786,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 380" ID="380" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -8054,7 +8065,7 @@
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
+     <Disabled>True</Disabled>
      <Multipage PagesNum="4" CurrentPage="0"/>
      <Shortcut Page="0" Name="Page: 1"/>
      <Shortcut Page="1" Name="Page: 2"/>
@@ -8075,7 +8086,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Slider 231" ID="402" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -8331,7 +8342,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 418" ID="418" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -8610,7 +8621,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 439" ID="439" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -8889,7 +8900,7 @@
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
+     <Disabled>True</Disabled>
      <Multipage PagesNum="4" CurrentPage="0"/>
      <Shortcut Page="0" Name="Page: 1"/>
      <Shortcut Page="1" Name="Page: 2"/>
@@ -8910,7 +8921,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Slider 231" ID="461" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -9166,7 +9177,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 477" ID="477" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -9445,7 +9456,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 498" ID="498" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -9724,7 +9735,7 @@
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
+     <Disabled>True</Disabled>
      <Multipage PagesNum="4" CurrentPage="0"/>
      <Shortcut Page="0" Name="Page: 1"/>
      <Shortcut Page="1" Name="Page: 2"/>
@@ -9745,7 +9756,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Slider Caption="Slider 231" ID="520" WidgetStyle="Slider" InvertedAppearance="false">
        <WindowState Visible="False" X="5" Y="5" Width="50" Height="310"/>
        <Appearance>
@@ -10001,7 +10012,7 @@
       <ShowHeader>False</ShowHeader>
       <ShowEnableButton>True</ShowEnableButton>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 536" ID="536" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -10280,7 +10291,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>False</Disabled>
+      <Disabled>True</Disabled>
       <Button Caption="Button 557" ID="557" Icon="">
        <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
        <Appearance>
@@ -10642,49 +10653,6 @@
     <Playback/>
     <Stop/>
    </CueList>
-   <SoloFrame Caption="Fog-Machine" ID="7">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4294945280</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="1305" Y="305" Width="210" Height="95"/>
-    <AllowChildren>False</AllowChildren>
-    <AllowResize>False</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Fog ON" ID="8" Icon="">
-     <WindowState Visible="True" X="5" Y="45" Width="95" Height="45"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="72"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Fog OFF" ID="9" Icon="">
-     <WindowState Visible="True" X="105" Y="45" Width="100" Height="45"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="175"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </SoloFrame>
   </Frame>
   <Properties>
    <Size Width="1800" Height="2000"/>
